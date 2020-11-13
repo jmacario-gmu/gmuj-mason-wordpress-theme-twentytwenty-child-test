@@ -1,0 +1,330 @@
+/* General style modifications to parent theme */
+
+/* Default and small screens */
+
+
+/* Remove background color on the page body added by the Twentytwenty theme. */
+body {
+	background-color:transparent;
+}
+
+/* Fix font sizes */
+main#site-content, .entry-content {
+	font-size:0.9em;
+}
+
+/* Fix word breaking and wrapping rules */
+*,
+*::before,
+*::after {
+	word-break: normal;
+	word-wrap: normal;
+}
+
+/* Modify default link colors */
+a {
+	color:#006633;
+}
+
+/* Modify links colors for mobile menu */
+.modal-menu a {
+	color:#006633;
+}
+
+/* Fix color of links in footer widget areas */
+.footer-widgets a {
+	color:#006633;
+}
+
+/* Fix color of links in entry headers */
+.entry-header a {
+	color: #006633 !important;
+}
+
+/* Style blockquotes */
+blockquote {
+	border-color:#006633;
+}
+
+/* Style pull quotes */
+.wp-block-pullquote:before {
+	color:#006633;
+}
+
+/* Style captions */
+.entry-content figcaption {
+    background-color: #232525;
+    color: white;
+    margin-top: 0;
+    padding: 1.25em;
+}
+.entry-content figcaption, .wp-caption-text {
+    font-size: 1.4rem;
+}
+
+/* Style code */
+code {
+	color:#595855;
+}
+
+/* Set default color for main content area */
+main#site-content {
+	color: #73726f;
+}
+
+/* Fix colors, generally */
+/* Only apply this to the main content area, to avoid affecting header and footer, which have differently-colored backgrounds */
+main#site-content .color-accent,
+main#site-content .color-accent-hover:hover,
+main#site-content .color-accent-hover:focus,
+main#site-content .has-accent-color,
+main#site-content .has-drop-cap:not(:focus)::first-letter,
+main#site-content .wp-block-button.is-style-outline {
+    color: #006633;
+}
+/* Apply this also to the sidebar areas */
+.sidebar .color-accent,
+.sidebar .color-accent-hover:hover,
+.sidebar .color-accent-hover:focus,
+.sidebar .has-accent-color,
+.sidebar .has-drop-cap:not(:focus)::first-letter,
+.sidebar .wp-block-button.is-style-outline {
+    color: #006633;
+}
+
+/* Style buttons */
+/* Only apply this to the main content area, to avoid affecting header and footer, which have differently-colored backgrounds */
+main#site-content button,
+main#site-content .button,
+main#site-content .faux-button,
+main#site-content .wp-block-button__link,
+main#site-content .wp-block-file .wp-block-file__button,
+main#site-content input[type="button"],
+main#site-content input[type="reset"],
+main#site-content input[type="submit"] {
+	background-color:#006633;
+	color:white;
+}
+/* Apply this also to the sidebar areas */
+.sidebar button,
+.sidebar .button,
+.sidebar .faux-button,
+.sidebar .wp-block-button__link,
+.sidebar .wp-block-file .wp-block-file__button,
+.sidebar input[type="button"],
+.sidebar input[type="reset"],
+.sidebar input[type="submit"] {
+	background-color:#006633;
+	color:white;
+}
+/* And to the parent theme footer widget areas */
+.footer-widgets-wrapper button,
+.footer-widgets-wrapper .button,
+.footer-widgets-wrapper .faux-button,
+.footer-widgets-wrapper .wp-block-button__link,
+.footer-widgets-wrapper .wp-block-file .wp-block-file__button,
+.footer-widgets-wrapper input[type="button"],
+.footer-widgets-wrapper input[type="reset"],
+.footer-widgets-wrapper input[type="submit"] {
+	background-color:#006633;
+	color:white;
+}
+
+/* Fix text color for outline style */
+main#site-content .is-style-outline .wp-block-button__link:not(.has-text-color) {
+    color: inherit;
+}
+/* Apply this also to the sidebar areas */
+.sidebar .is-style-outline .wp-block-button__link:not(.has-text-color) {
+    color: inherit;
+}
+
+/* Fix background color for outline style */
+main#site-content .is-style-outline .wp-block-button__link {
+    background-color: transparent;
+}
+/* Apply this also to the sidebar areas */
+.sidebar .is-style-outline .wp-block-button__link {
+    background-color: transparent;
+}
+
+/* Style website header area */
+header#site-header {
+	min-height:14em;
+	background-color:transparent; /* Remove background color on the site header added by the Twentytwenty theme. */
+	background-repeat:no-repeat;
+	background-size: 200%;
+	background-position: top center;
+}
+
+header#site-header:before {
+	content: '';
+	display:block;
+	position:absolute;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+	background:linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5) 30%, rgba(0,0,0,0));
+	z-index:0;
+}
+
+/* Style header icons for small screens (search and menu) */
+.header-inner .toggle {
+	align-items: flex-start;
+	padding: 2rem;
+}
+
+/* Style the toggle-inner container (contains the search and menu icons) */
+.toggle-inner{
+	position: absolute; /* For small screens, force the toggle-inner container to be at the top (This is a fix for iOS (both Safari and Chrome) and arguably shouldn't be necessary.) */
+	top: 1rem;
+}
+
+/* Ensure modal menu and search are always on top */
+.menu-modal, .search-modal{
+	z-index: 9999;
+}
+
+/* Style site title area */
+.header-titles-wrapper .toggle-icon, .header-titles-wrapper .toggle-text {
+	color:white !important;
+}
+
+/* Style site title area */
+.header-titles {
+	z-index:1;
+}
+
+/* Style site name */
+div.site-name {
+	color: white;
+	font-weight: bold;
+	font-size: 1.5em;
+	font-family: "Open Sans", Verdana, Geneva, sans-serif;
+}
+
+/* Style site name link */
+div.site-name a {
+	color: white;
+	text-decoration: none;
+}
+
+/* Hide site description/tagline */
+div.site-description {
+	display:none;
+}
+
+/* Style main content area */
+main#site-content {
+	background-color: white;
+}
+
+/* Set font for main content area and sidebars */
+article, .entry-content, .sidebar {
+	font-family: "Open Sans", Verdana, Geneva, sans-serif !important;
+}
+
+/* Remove padding before main page content */
+.post-inner {
+	padding-top:0;
+}
+
+/* Style entry header area */
+header.entry-header {
+	padding-top: 2rem !important;
+	padding-bottom:3rem !important;
+	margin-bottom: 2em;
+	background-color:#eff0e7 !important;
+}
+
+/* Style all entry titles */
+h1.entry-title {
+	margin-top:0.25em;
+	font-family: 'Roboto Slab', Palatino Linotype, Palatino, serif;
+	letter-spacing: 0.025em;
+}
+/* Style entry title color for titles for single post pages and multiple post pages */
+h1.entry-title, h2.entry-title {
+	color: #42413f;
+}
+/* Style entry title for pages only */
+article.page h1.entry-title {
+	text-align:left;
+}
+
+/* Style entry content */
+.entry-content {
+
+}
+
+/* Style entry content headers */
+/* h2 */
+.entry-content h2 {
+	color: #006940;
+	font-size:4rem;
+}
+/* h3 */
+.entry-content h3 {
+	color: #004c2e;
+	font-size:3.5rem;
+}
+/* h4 */
+.entry-content h4 {
+	color: #004c2e;
+	font-size:3rem;
+}
+
+/* Basic widget styling */
+li.widget {
+	list-style-type: none;
+	clear: both; /* ensure that if a preceding widget contains a floated element, the subsequent widget will start below the floated item */
+}
+
+/* Fix widget fonts */
+.widget_text p, .widget_text ol, .widget_text ul, .widget_text dl, .widget_text dt, .widget-content .rssSummary {
+    font-family: inherit;
+    letter-spacing: normal;
+}
+
+/* Style widget item titles in content areas */
+div.entry-content li.widget h3.widget-title {
+    margin:0 1em 0.5em;
+    text-align: center;
+    letter-spacing: 0.025em;
+    padding: 20px 0px;
+    font-family: 'Roboto Slab', serif;
+    font-weight:bold;
+    color:#006633;
+}
+
+/* Style content footer widget area */
+.footer-widgets-outer-wrapper {
+    border-bottom: none;
+}
+
+/* Style social media menu */
+ul.social-menu {
+	justify-content: center;
+}
+
+/* Style search menu icons */
+.social-icons a {
+	/* background-color: #006633; - background color set in custom color schemes css files */
+}
+
+/* Style WordPress cover block */
+.wp-block-cover.has-background-dim:not(.has-background-gradient):before {
+	display:none; /* The parent theme has a full page overlay which doesn't work for our child theme, so we hide it. */
+}
+
+/* Homepage customizations */
+/* Hide page title for home page */
+body.home.singular header.entry-header {
+	display:none;
+}
+
+/* Hide post separators on homepage */
+body.home .post-separator {
+	display:none;
+}

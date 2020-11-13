@@ -1,0 +1,72 @@
+/* General style modifications to parent theme */
+
+/* 1,000+ pixels */
+
+
+/* Style site header */
+header#site-header {
+	/*overflow-x: hidden; *//* Because the navigation menu wrapper div skews to the right, it may make the page appear a bit too wide and allow for horizontal scrolling (Chrome). To avoid this, we will clip any extra content appearing outside the site header div area. Edit: I have turned this off as it is causing a display issue in Chrome. */
+}
+
+/* Add semi-transparent background gradient to the site header by using a pseudo-element */
+header#site-header:before {
+	background:linear-gradient(145deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5) 30%, rgba(0,0,0,0));
+	z-index:-1;
+}
+
+/* Style site header */
+.header-inner {
+	margin-left:0;
+}
+
+/* Fix header icons for larger screens */
+.header-inner .toggle {
+	align-items: center;
+	padding: 0 2rem;
+}
+
+/* Style the toggle-inner container (contains the search icon) */
+.toggle-inner{
+	position: static;
+}
+
+/* Style site title area */
+.header-titles-wrapper {
+    padding: 1em 1em 0;
+}
+
+.header-titles {
+	align-items: flex-end !important; /* Ensure that the logo and text sit at about the same baseline */
+    margin-top:0.5em;
+    margin-left:0;
+    background-color: transparent; /* Turn-off semi-transparent background from default stylesheet */
+	box-shadow: none; /* Turn-off semi-transparent shadow  from default stylesheet */
+}
+
+/* Style site logo */
+.header-titles .site-logo {
+	margin: 1rem 0 0 0;
+}
+
+/* Allow for larger logo */
+.site-logo img {
+	max-height: 13rem;
+}
+
+/* Style site name */
+div.site-name {
+	margin-bottom: 0.5em;
+    margin-left: -0.5em;
+    font-weight: normal;
+    text-shadow: 3px 3px 4px black;
+}
+
+/* Style site name link */
+div.site-name a {
+	font-size:1.1em;
+}
+
+/* Style page title for full width template */
+body.page-template-template-full-width div.entry-header-inner {
+	max-width:120rem;
+}

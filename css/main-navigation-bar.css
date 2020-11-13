@@ -1,0 +1,7 @@
+/* Main navigation bar modifications to parent theme */
+
+/* Default and small screens */
+@import 'main-navigation-bar-default.css';
+
+/* 1,000+ pixels */
+@import 'main-navigation-bar-1000+.css' screen and (min-width: 1000px);

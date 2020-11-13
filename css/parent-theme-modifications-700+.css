@@ -1,0 +1,33 @@
+/* General style modifications to parent theme */
+
+/* 700+ pixels */
+
+
+/* Style website header area */
+header#site-header {
+	background-size: cover;
+}
+
+/* Style the toggle-inner container (contains the search and menu icons) */
+.toggle-inner{
+	top: 2rem;
+}
+/* Style entry header area */
+header.entry-header {
+	padding-bottom: 2rem !important;
+}
+
+/* Style entry title */
+h1.entry-title, h2.entry-title {
+	font-size:4.5rem;
+}
+
+/* Fix main content area font-size */
+.entry-content {
+	font-size:18px;
+}
+
+/* Remove extra space above the first article on archive pages */
+body:not(.singular) main > article:first-of-type {
+    padding-top:0;
+}

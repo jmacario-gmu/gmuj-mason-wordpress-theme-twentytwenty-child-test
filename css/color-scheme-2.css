@@ -1,0 +1,57 @@
+/**
+ * Summary: css file to implement custom color scheme 2
+ */
+
+
+/* Default and small screens */
+
+/* Set background-color for social media menu icons */
+.social-icons a {
+	background-color: #d47137 !important;
+}
+
+
+/* 1,000+ pixels */
+
+@media screen and (min-width: 1000px) {
+
+	/* Set background color of navigation bar */
+	div.header-navigation-wrapper {
+	    background-color: #d47137;
+	}
+
+	/* Set background-color of navigation bar skew detail */
+	div.header-navigation-wrapper:before {
+	    background-color:#d47137;
+	}
+
+	/* Set link hover underline color for top level of main navigation bar */
+	ul.primary-menu > li > a:hover::after {
+	    background-color: #febe10;
+	}
+
+	/* Style currently-active top menu item */
+	ul.primary-menu li.current-menu-item > a::after {
+	    background-color: #febe10;
+	}
+
+	/* Set background color of main navigation sub-menus */
+	.primary-menu ul {
+	    background: #f69359 !important;
+	}
+
+	/* Set color of main navigation sub-menu background 'arrow' details */
+	.primary-menu ul::after {
+	    border-bottom-color: #f69359 !important;
+	}
+	.primary-menu ul ul::after {
+	    border-bottom-color: transparent !important;
+	    border-left-color: #f69359 !important;
+	}
+
+	/* Set link hover color and active menu item color for main navigation sub-menus */
+	ul.primary-menu ul li a:hover, ul.primary-menu ul li.current-menu-item a {
+	    background-color: #f8b57b;
+	}
+
+}

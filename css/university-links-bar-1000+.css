@@ -1,0 +1,38 @@
+/* University links bar */
+
+/* 1,000+ pixels */
+
+div#university-links-bar {
+    display:block;
+    padding:0.25em 0;
+    background-color: #fc3;
+}
+
+div#university-links-bar ul#university-links {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin:0;
+}
+
+div#university-links-bar ul#university-links li {
+    margin:0;
+}
+
+div#university-links-bar ul#university-links li a {
+    margin:0 0.5em;
+    font-family: "Open Sans", Verdana, Geneva, sans-serif;
+    display:block;
+    padding: 0.35em 1em;
+    font-size:0.725em;
+    font-weight: bold;
+    color: #5c5b58;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: normal;
+}
+
+div#university-links-bar ul#university-links li a:hover {
+    color:#063;
+}
